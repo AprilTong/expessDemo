@@ -14,4 +14,9 @@ router.post('/upload', upload, (req, res, next) => {
 })
 
 router.get('/user/json', userController.getuser)
+router.post('/user/getUserId', userController.getuserById)
+router.post('/user/addUser', userController.addUser)
+router.post('/user/updateUser', userController.updateUser)
+
+router.post('/user/deleteUser', userController.deleteUser)
 module.exports = router
